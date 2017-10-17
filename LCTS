@@ -1,1 +1,25 @@
 import java.util.*;
+
+public class Main {
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Si vous souhaitez convertir de Celsius vers Fahrenheit tapez "1" Dans l'autre sens tapez "0" ");
+    int i = sc.nextInt();
+    
+    while ( i != 1 && i !=0) { System.out.println("Si vous souhaitez convertir de Celsius vers Fahrenheit tapez "1" Dans l'autre sens tapez "0" ");}
+    if (i == 1) 
+    {
+       System.out.println("Ecrivez la température");
+       int t = sc.nextInt();
+       double result = (9/5)*t + 32;
+       System.out.println("Votre résultat est : " + result);
+    }
+    
+    else if (i == 0) 
+    {
+       System.out.println("Ecrivez la température");
+       int t = sc.nextInt();
+       double result = (( (t-32)*5)/9);
+       System.out.println("Votre résultat est : " + result);
+    }
+       
