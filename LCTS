@@ -11,7 +11,7 @@ public class Main {
       {
         if ( again == "O") 
         {
-          System.out.println("Si vous souhaitez convertir de Celsius vers Fahrenheit tapez "1" Dans l'autre sens tapez "0" ");
+          System.out.println("Si vous souhaitez convertir de Celsius vers Fahrenheit tapez 1 Dans l'autre sens tapez 0 ");
           int i = sc.nextInt();
 
           if (i == 1) 
@@ -40,7 +40,8 @@ public class Main {
         {
           Systeme.out.println("Bye bye");
           break;
-      }
+        }
        while ( i != 1 && i !=0);
-   }
+    }
+}
 }
