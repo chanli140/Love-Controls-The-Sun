@@ -12,14 +12,14 @@ public class Main {
     {
       do
       {
-          System.out.println("Si vous souhaitez convertir de Celsius vers Fahrenheit tapez 1 Dans l'autre sens tapez 0 ");
+          System.out.println("Pour convertir de Celsius vers Fahrenheit tapez 1 \n Pour convertir de Fahrenheit vers Celsius tapez 0 ");
           Scanner sc = new Scanner(System.in);
           i = sc.nextInt();
 
           if (i == 1) 
           {
              Scanner sc2 = new Scanner(System.in);
-             System.out.println("Ecrivez la température");
+             System.out.println("Temperature a convertir");
              int t = sc2.nextInt();
              double result = (9/5)*t + 32;
              System.out.println(result + "Fahrenheit");
@@ -28,7 +28,7 @@ public class Main {
           else if (i == 0) 
           {
              Scanner sc3 = new Scanner(System.in);
-             System.out.println("Ecrivez la température");
+             System.out.println("Temperature a convertir");
              int t = sc3.nextInt();
              double result = (( (t-32)*5)/9);
              System.out.println(result + "Celsius");
