@@ -1,15 +1,17 @@
 import java.util.*;
+import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args)
   {
+
     String again = "O";
     int i = 0;
     
+    while ( again == "O") 
+    {
       do
       {
-        if ( again == "O") 
-        {
           System.out.println("Si vous souhaitez convertir de Celsius vers Fahrenheit tapez 1 Dans l'autre sens tapez 0 ");
           Scanner sc = new Scanner(System.in);
           i = sc.nextInt();
@@ -31,17 +33,15 @@ public class Main {
              double result = (( (t-32)*5)/9);
              System.out.println(result + "Celsius");
           }
+
+      }
+       while ( i != 1 && i !=0);
           System.out.println (" Souhaitez-vous recommencer ? O/N");
           Scanner sc4 = new Scanner(System.in);
-          String str = sc4.nextLine();
-          again = str;
-        }
-        else 
-        {
-          Systeme.out.println("Bye bye");
-          break;
-        }
+          again = sc4.nextLine();
     }
-       while ( i != 1 && i !=0);
+     System.out.println("Bye bye");
+     break;
+          
 }
 }
