@@ -4,7 +4,7 @@ public class Main {
   public static void main(String[] args)
   {
     Scanner sc = new Scanner(System.in);
-    char again = "O";
+    String again = "O";
     int i = 0;
     
       do
@@ -34,7 +34,7 @@ public class Main {
           System.out.println (" Souhaitez-vous recommencer ? O/N");
           Scanner sc4 = new Scanner(System.in);
           String str = sc4.nextLine();
-          char again = str.charAt(0);
+          again = str;
         }
         else 
         {
