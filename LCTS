@@ -5,10 +5,10 @@ public class Main {
   public static void main(String[] args)
   {
 
-    String again = "O";
+    int again = 0;
     int i = 0;
     
-    while ( again == "O") 
+    while ( again == 0) 
     {
       do
       {
@@ -36,12 +36,11 @@ public class Main {
 
       }
        while ( i != 1 && i !=0);
-          System.out.println (" Souhaitez-vous recommencer ? O/N");
+          System.out.println (" Souhaitez-vous recommencer ? 1- Oui /2- Non");
           Scanner sc4 = new Scanner(System.in);
-          again = sc4.nextLine();
+          again = sc4.nextInt();
     }
      System.out.println("Bye bye");
-     break;
           
 }
 }
